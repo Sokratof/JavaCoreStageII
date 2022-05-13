@@ -12,4 +12,5 @@ public class Person {
         this.run = run;
         this.swim = swim;
     }
+
 }

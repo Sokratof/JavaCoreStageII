@@ -9,4 +9,5 @@ public class Main {
         person[2] = new Person("Tom",200, 3, 400);
         person[3] = new Person("Kris",200, 3, 400);
     }
+
 }

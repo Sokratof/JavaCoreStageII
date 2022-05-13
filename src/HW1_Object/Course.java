@@ -14,7 +14,7 @@ public class Course {
 
     public String doIt(Team team) {
         for (Person person : team.getPeople()){
-            result = "Команда "+ team.getName() + " Спортсмен " + person.getName() + " " + '\n';
+            result = "Команда "+ team.name + " Спортсмен " + person.getName() + " " + '\n';
             int valueCross = person.getRun();
             testCross(valueCross);
             int valueWall = person.getJump();

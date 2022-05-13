@@ -13,8 +13,8 @@ public class Main {
 
         Course course = new Course(100,1,200);
         Team team = new Team("BAGS", person);
-        String result = course.doIt(Team);
-        System.out.println("Команда - " + team.getName());
-        System.out.println(result);
+        //String result = course.doIt(Team);
+
+        //System.out.println(result);
     }
 }

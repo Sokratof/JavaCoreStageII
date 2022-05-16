@@ -12,6 +12,10 @@ public class Course {
         this.water = water;
     }
     // Вывод информации, кто прошел дистанцию
+    // Для Андрея Звездина.
+    // Раньше проверка прохождения была вынесена за цикл.
+    // Добавил проверку внутрь цикла. Но почему sout выводит только последнего?
+
     public String doIt(Team team) {
         for (Person person : team.getPeople()){
             result = "Спортсмен " + person.getName() + " " + '\n';

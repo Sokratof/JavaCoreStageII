@@ -11,6 +11,9 @@ public class Main {
         person[1] = new Person("Nik",200, 2, 600);
         person[2] = new Person("Tom",300, 3, 700);
         person[3] = new Person("Kris",400, 3, 100);
+        for (HW1_Object.Person Person : person){
+            System.out.println(Person.toString(person));
+        }
 
         Course course = new Course(100,1,200);
         Team team = new Team(person);

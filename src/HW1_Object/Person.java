@@ -24,4 +24,8 @@ public class Person {
     public int getSwim() {
         return  swim;
     }
+
+    public Person[] toString(Person[] person) {
+        return person;
+    }
 }

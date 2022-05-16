@@ -11,29 +11,17 @@ public class Course {
         this.wall = wall;
         this.water = water;
     }
-
+    // Вывод информации, кто прошел дистанцию
     public String doIt(Team team) {
         for (Person person : team.getPeople()){
-            result = "Команда "+ team.name + " Спортсмен " + person.getName() + " " + '\n';
+            result = "Спортсмен " + person.getName() + " " + '\n';
             int valueCross = person.getRun();
-            testCross(valueCross);
+            if (valueCross>cross) result +="Пробежал кросс " + '\n';
             int valueWall = person.getJump();
-            testWall(valueWall);
+            if (valueWall>wall) result +="Стену перелез " + '\n';
             int valueWater = person.getSwim();
-            testSwim(valueWater);
-        }
+            if (valueWater>water) result +="Бассейн проплыл" + '\n';
+            }
         return result;
     }
-    private void testCross(int valueCross){
-        if (valueCross>cross) result +="Пробежал кросс " + '\n';
-    }
-    private void testWall(int valueJump){
-        if (valueJump>wall) result +="Стену перелез " + '\n';
-    }
-    private void  testSwim(int valueWater){
-        if (valueWater>water) result +="Бассйен проплыл" + '\n';
-    }
-
-
-
 }

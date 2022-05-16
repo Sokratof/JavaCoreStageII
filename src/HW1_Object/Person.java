@@ -1,10 +1,10 @@
 package HW1_Object;
 
 public class Person {
-    private String name;
-    private int run;
-    private int jump;
-    private int swim;
+    protected String name;
+    protected int run;
+    protected int jump;
+    protected int swim;
 
     public Person(String name, int run, int jump, int swim) {
         this.name = name;

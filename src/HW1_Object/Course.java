@@ -1,5 +1,7 @@
 package HW1_Object;
 
+import java.util.Arrays;
+
 public class Course {
     private int cross;
     private int wall;
@@ -12,20 +14,18 @@ public class Course {
         this.water = water;
     }
     // Вывод информации, кто прошел дистанцию
-    // Для Андрея Звездина.
-    // Раньше проверка прохождения была вынесена за цикл.
-    // Добавил проверку внутрь цикла. Но почему sout выводит только последнего?
 
     public String doIt(Team team) {
-        for (Person person : team.getPeople()){
-            result = "Спортсмен " + person.getName() + " " + '\n';
+        for (Person person : team.getPeople()) {
+            result = "Athlete " + person.getName() + " " + '\n';
             int valueCross = person.getRun();
-            if (valueCross>cross) result +="Пробежал кросс " + '\n';
+            if (valueCross > cross) result += "Run cross " + '\n';
             int valueWall = person.getJump();
-            if (valueWall>wall) result +="Стену перелез " + '\n';
+            if (valueWall > wall) result += "Сlimb over the wall " + '\n';
             int valueWater = person.getSwim();
-            if (valueWater>water) result +="Бассейн проплыл" + '\n';
-            }
+            if (valueWater > water) result += "Swim the pool" + '\n';
+            System.out.println(result);
+        }
         return result;
     }
 }

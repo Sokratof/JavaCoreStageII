@@ -12,20 +12,20 @@ public class Person {
         this.run = run;
         this.swim = swim;
     }
+
     public String getName() {
         return name;
     }
+
     public int getRun() {
         return run;
     }
+
     public int getJump() {
         return jump;
     }
-    public int getSwim() {
-        return  swim;
-    }
 
-    public Person[] toString(Person[] person) {
-        return person;
+    public int getSwim() {
+        return swim;
     }
 }

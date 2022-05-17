@@ -13,6 +13,7 @@ public class Course {
         this.wall = wall;
         this.water = water;
     }
+
     // Вывод информации, кто прошел дистанцию
 
     public String doIt(Team team) {

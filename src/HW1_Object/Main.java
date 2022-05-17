@@ -10,9 +10,6 @@ public class Main {
         person[1] = new Person("Nik",150, 2, 600);
         person[2] = new Person("Tom",30, 3, 12);
         person[3] = new Person("Kris",400, 3, 410);
-        // for (HW1_Object.Person Person : person){
-        //        System.out.println(Person.toString(person));
-        //}
 
         Course course = new Course(100,2,200);
         Team team = new Team(person);

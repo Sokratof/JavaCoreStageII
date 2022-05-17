@@ -19,11 +19,17 @@ public class Course {
         for (Person person : team.getPeople()) {
             result = "Athlete " + person.getName() + " " + '\n';
             int valueCross = person.getRun();
-            if (valueCross > cross) result += "Run cross " + '\n';
+            if (valueCross > cross) {
+                result = result + "Run cross " + '\n';
+            }
             int valueWall = person.getJump();
-            if (valueWall > wall) result += "Сlimb over the wall " + '\n';
+            if (valueWall > wall) {
+                result = result + "Сlimb over the wall " + '\n';
+            }
             int valueWater = person.getSwim();
-            if (valueWater > water) result += "Swim the pool" + '\n';
+            if (valueWater > water) {
+                result = result + "Swim the pool" + '\n';
+            }
             System.out.println(result);
         }
         return result;

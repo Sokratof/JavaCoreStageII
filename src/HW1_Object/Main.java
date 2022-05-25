@@ -17,5 +17,6 @@ public class Main {
         System.out.println(NameTeam);
         System.out.println();
         String result = course.doIt(team);
+
     }
 }
